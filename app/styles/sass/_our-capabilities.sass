@@ -1,0 +1,65 @@
+.our-capabilities
+    margin-top: 120px
+    &__wrapper
+        margin-top: 80px
+    &__title
+        font-size: 18px
+        text-transform: uppercase
+        font-weight: bold
+        line-height: 21px
+    &__title::after
+        content: " "
+        display: block
+        position: absolute
+        bottom: 0px
+        width: 50px
+        border-bottom: 2px solid #00A4E5;
+    &__btn
+        display: flex
+        justify-content: center
+        background-color: #00A4E5
+        padding: 10px 29px
+        text-transform: uppercase
+    &__item
+        border: 2px solid #E6E6E6
+        box-shadow: 0 0 6px rgba(0,0,0,0.2)
+        padding-left: 25px
+    &__item img
+        margin-bottom: 25px
+        padding-top: 45px
+    &__item-text
+        display: block
+        padding-bottom: 50px
+    &__item-title
+        margin-bottom: 15px
+        text-transform: uppercase
+        font-size: 16px
+        line-height: 24px
+        font-weight: bold
+@include media-breakpoint-down(md)
+    .our-capabilities
+        margin-top: 60px
+        &__wrapper
+            margin-top: 20px
+        &__title
+            display: block
+            margin-bottom: 20px
+        &__title::after
+            margin-bottom: 10px
+        &__btn
+            margin-top: 20px
+            margin-bottom: 20px
+        &__item
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-bottom: 30px
+            padding-left: 0px
+        &__item-title
+            text-align: center
+        &__item-text
+            text-align: center
+        &__item img
+            height: 100px
+            width: 60px

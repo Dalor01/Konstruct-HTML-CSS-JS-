@@ -1,0 +1,49 @@
+.our-story
+    &__title
+        display: flex
+        justify-content: center
+        position: relative
+        font-size: 18px
+        font-weight: bold
+        text-transform: uppercase
+        text-align: 21px
+        letter-spacing: 2.3px
+        margin-top: 57px
+    &__title::after
+        content: " "
+        display: block
+        position: absolute
+        bottom: -10px
+        width: 50px
+        border-bottom: 2px solid #000;
+    &__founded
+        margin-top: 50px
+        font-size: 20px
+        line-height: 27px
+        letter-spacing: 2px
+        font-weight: bold
+    &__founded--blue
+        color: #16ACE8
+    &__post-founded
+        margin-top: 30px
+    &__bitmap
+        font-weight: bold
+        padding-top: 15px
+        padding-left: 15px
+        margin-top: 50px
+        width: 140px
+        height: 225px
+    &__bitmap p
+        font-size: 24px
+        color: #fff
+        text-transform: uppercase
+    &__bitmap1
+        background-image: url(/images/dist/bitmap.png)
+    &__bitmap3
+        background-image: url(/images/dist/bitmap2.png)
+    &__bitmap2
+        background-image: url(/images/dist/bitmap3.png)
+@include media-breakpoint-down(sm)
+.our-story
+    &__bitmap
+        margin-top: 30px
